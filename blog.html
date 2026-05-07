@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - 7in1 Impact Ecosystem</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Static Background -->
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: linear-gradient(135deg, #f5f7fa, #c3cfe2);"></div>
+    <div id="app" v-cloak>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg fixed-top custom-nav" :class="{'scrolled': isScrolled}">
+            <div class="container">
+                <a class="navbar-brand text-gradient" href="index.html">
+                    <i class="fa-solid fa-globe"></i> 7in1 Impact Ecosystem
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link nav-hover" href="index.html#featured">Featured</a></li>
+                        <li class="nav-item"><a class="nav-link nav-hover" href="index.html#marketplace">MarketPlace</a></li>
+                        <li class="nav-item"><a class="nav-link nav-hover" href="index.html#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link nav-hover" href="index.html#ngo-finder">NGO Finder</a></li>
+                        <li class="nav-item"><a class="nav-link nav-hover" href="index.html#admin">Admin</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-hover" href="#" id="joinUsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">JoinUs</a>
+                            <ul class="dropdown-menu custom-dropdown" aria-labelledby="joinUsDropdown">
+                                <li><a class="dropdown-item" href="https://forms.gle/7NYadWarP4W64kip8" target="_blank"><i class="fa-solid fa-handshake"></i> VOLUNTEER</a></li>
+                                <li><a class="dropdown-item" href="https://forms.gle/3xSx2DRRLrf7gck87 " target="_blank"><i class="fa-solid fa-house-chimney-medical"></i> NGO</a></li>
+                                <li><a class="dropdown-item" href="https://forms.gle/kdPxoanTKxRAXRpi9" target="_blank"><i class="fa-solid fa-building"></i> CSR COMPANY</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Blogs Heading -->
+        <section class="section-padding" style="margin-top: 120px;">
+            <div class="container">
+                <div class="text-center mb-5 section-title-wrapper">
+                    <h2 class="section-title text-dark display-4 fw-bold">Our Blogs</h2>
+                    <div class="title-underline"></div>
+                    <p class="lead text-dark mt-3">Discover stories of impact, change, and community.</p>
+                </div>
+
+                <!-- Blog List -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="blog-card d-flex flex-column flex-md-row">
+                            <!-- Left Side: Content -->
+                            <div class="col-md-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                                <h3 class="fw-bold text-dark mb-3">Empowering Local Artisans: The Journey of Handmade Eco-Bags</h3>
+                                <p class="text-dark mb-4" style="font-size: 1.1rem; line-height: 1.6;">
+                                    In the heart of rural India, a small group of women has transformed their lives by embracing sustainable practices. This blog explores how creating eco-friendly tote bags has not only provided them with financial independence but also helped reduce plastic waste in their communities. Read on to discover the true power of sustainable commerce.
+                                </p>
+                                <div>
+                                    <a href="blog-detail.html" class="btn btn-glow rounded-pill px-4 py-2 text-white text-decoration-none">Read More <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <!-- Right Side: Image -->
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Blog Image" class="blog-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="blog-card d-flex flex-column flex-md-row-reverse">
+                            <!-- Left Side: Content -->
+                            <div class="col-md-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                                <h3 class="fw-bold text-dark mb-3">A Spark of Hope: The Story Behind Our Handcrafted Diyas</h3>
+                                <p class="text-dark mb-4" style="font-size: 1.1rem; line-height: 1.6;">
+                                    Every festival brings light, but for visually impaired artisans, crafting diyas brings a different kind of illumination—hope and self-reliance. Learn about the intricate process of making these beautiful clay lamps and the incredible people behind them.
+                                </p>
+                                <div>
+                                    <a href="blog-detail.html" class="btn btn-glow rounded-pill px-4 py-2 text-white text-decoration-none">Read More <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <!-- Right Side: Image -->
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80" alt="Blog Image" class="blog-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer snippet -->
+        <footer class="footer-section py-4 text-center">
+            <div class="container">
+                <p class="mb-0 text-muted">&copy; 2026 7in1 Impact Ecosystem. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Vue 3 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
